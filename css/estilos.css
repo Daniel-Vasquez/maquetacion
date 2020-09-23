@@ -48,19 +48,16 @@ header {
 header .header-icons-container {
   width: 100%;
   height: 50px;
-  display: grid; /*Gracias al display: grid;*/
   background-color: #47cfac;
 }
 
 header .header-icons-container .icons {
-  width: 300px;
-  height: auto;
+  height: 100%;
   display: flex;
   justify-items: flex-end;
-  justify-content: space-between;
-  align-items: center; /*Gracias al display: grid;*/
-  justify-self: end; /*Gracias al display: grid;*/
-  margin-right: 50px;
+  justify-content: space-around;
+  align-items: center; 
+  /* border: 1px solid red; */
 }
 
 header .icons span {
@@ -373,6 +370,26 @@ footer p {
 }
 
 @media (max-width: 600px) {
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .nav-logo-container {
+    margin-left: 0;
+  }
+
+  nav .nav-logo-container img {
+    width: 160px;
+    margin-top: 0;
+  }
+
+  nav .profile-link {
+    margin-right: 0;
+  }
+
   .blogs-posts-container .post-container {
       max-width: 95%;
   }
@@ -403,12 +420,8 @@ footer p {
 }
 
 @media (max-width: 425px) {
-  
-  header .header-icons-container .icons {
-    width: 100%;
-  }
 
-  nav {
+  /* nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -424,7 +437,7 @@ footer p {
 
   nav .profile-link {
     margin-right: 0;
-  }
+  } */
 
   .home-main-text {
     font-size: 26px;
@@ -465,6 +478,10 @@ footer p {
   .contact-main-container div p {
     font-size: 12px;
     letter-spacing: 1px;
+  }
+
+  .projects-main-container {
+    grid-template-columns: 1fr;
   }
 }
 
