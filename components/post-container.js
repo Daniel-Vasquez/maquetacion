@@ -18,13 +18,13 @@ class postContainer extends HTMLElement {
     templete.innerHTML = `
 		${this.getStyles()}
 		<article class="post-container">
-			<img src="../img/post-1.png" alt="" />
+			<img src="./img/post-1.png" alt="" />
 			<p class="parrafo-component">${this.title}</p>
 			<p>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
 			ut a fugiat soluta consequatur nisi sunt.
 			</p>
-			<a href="../blog.html" class="blogs-button">Leer más</a>
+			<a href="./blog.html" class="blogs-button">Leer más</a>
 		</article>
 		`;
     return templete;
