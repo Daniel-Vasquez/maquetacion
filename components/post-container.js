@@ -3,15 +3,15 @@ class postContainer extends HTMLElement {
     super();
   }
 
-	static get observedAttributes() {
-    return["title", "description"]
+  static get observedAttributes() {
+    return ["title", "description"];
   }
 
-	attributeChangedCallback(atribute, oldVal, newVal) {
-		if(atribute === "title" && oldVal !== newVal) {
-			this.title = newVal
-		}
-	}
+  attributeChangedCallback(atribute, oldVal, newVal) {
+    if (atribute === "title" && oldVal !== newVal) {
+      this.title = newVal;
+    }
+  }
 
   getTemplate() {
     const templete = document.createElement("template");
@@ -30,8 +30,8 @@ class postContainer extends HTMLElement {
     return templete;
   }
 
-	getStyles() {
-		return `
+  getStyles() {
+    return `
 			<style>
 				.parrafo-component {
 					font-weight: 900;
@@ -39,12 +39,13 @@ class postContainer extends HTMLElement {
 					color: #c3285d;
 				}
 			</style>
-		`
-	}
+		`;
+  }
 
   render() {
     this.appendChild(this.getTemplate().content.cloneNode(true));
   }
+
   connectedCallback() {
     this.render();
   }
