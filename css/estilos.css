@@ -120,6 +120,8 @@ nav .profile-link a {
   letter-spacing: 10px;
   color: white;
   text-align: center;
+  margin: 0;
+  padding: 5rem 0; 
 }
 
 .home-main-button {
@@ -327,6 +329,7 @@ footer p {
   .home-main-text {
     font-size: 30px;
     letter-spacing: 7px;
+    margin: 1rem;
   }
 
   .home-main-button {
@@ -368,7 +371,7 @@ footer p {
 
 @media (min-width: 800px) and (max-width: 899px) {
   .home-main section {
-    justify-content: start;
+    justify-content: center;
   }
 
   .home-main-text {
@@ -378,7 +381,7 @@ footer p {
 
 @media (min-width: 601px) and (max-width: 767px) {
   .home-main section {
-    justify-content: start;
+    justify-content: center;
     margin-top: 20px;
   }
 
@@ -444,7 +447,7 @@ footer p {
 @media (min-width: 426px) and (max-width: 568px) {
 
   .home-main section {
-    justify-content: start;
+    justify-content: center;
   }
 
   .home-main-text {
@@ -455,9 +458,14 @@ footer p {
 
 @media (max-width: 425px) {
 
+  .home-main section {
+    justify-content: start;
+  }
+
   .home-main-text {
     font-size: 26px;
     letter-spacing: 4px;
+    padding: 0px;
   }
 
   footer {
