@@ -61,17 +61,16 @@ header .header-icons-container .icons {
   justify-items: flex-end;
   justify-content: space-around;
   align-items: center; 
-  /* border: 1px solid red; */
 }
 
 header .icons span {
-  color: white; /*Como son fuentes asi le cambiamos el color*/
+  color: white; 
 }
 
 nav  {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 90px; /*Ó grid-template-rows: 90px;*/
+  height: 90px; 
 }
 
 nav .nav-logo-container {
@@ -160,11 +159,9 @@ nav .profile-link a {
   grid-column: 2;
 }
 
-/*--#Yo puse la declaración--*/
 .blogs-news-info-container h2 { 
   font-size: 45px;
 }
-/*--/Yo puse la declaración--*/
 
 .blogs-news-info-container p {
   margin-bottom: 35px;
@@ -295,8 +292,6 @@ footer p {
   padding: 0 5px;
 }
 
-/* ---------------------------------  @media  ---------------------------------------------------- */
-
 @media (max-width: 900px) {
   .blogs-main-new {
       grid-template-columns: 1fr;
@@ -386,11 +381,8 @@ footer p {
   }
 
   .home-main-text {
-    margin: 10px;
-  }
-
-  .home-main-text {
     font-size: 20px;
+    margin: 10px;
   }
 }
 
@@ -446,10 +438,6 @@ footer p {
 
 @media (min-width: 426px) and (max-width: 568px) {
 
-  .home-main section {
-    justify-content: center;
-  }
-
   .home-main-text {
     font-size: 30px;
   }
@@ -457,10 +445,6 @@ footer p {
 }
 
 @media (max-width: 425px) {
-
-  .home-main section {
-    justify-content: start;
-  }
 
   .home-main-text {
     font-size: 26px;
