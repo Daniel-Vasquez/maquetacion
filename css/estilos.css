@@ -1,14 +1,5 @@
-/*Google fonts: */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
 
-
-/*
-  Formas de usar:
-
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Mono', monospace;
-  font-family: 'Roboto Slab', serif;
-*/
 * {
   box-sizing: border-box;
 }
@@ -18,7 +9,7 @@
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   margin: 0;
   padding: 0;
 }
@@ -60,17 +51,17 @@ header .header-icons-container .icons {
   display: flex;
   justify-items: flex-end;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
 }
 
 header .icons span {
-  color: white; 
+  color: white;
 }
 
-nav  {
+nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 90px; 
+  height: 90px;
 }
 
 nav .nav-logo-container {
@@ -98,7 +89,7 @@ nav .profile-link a {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   height: 100%;
-  background-image: url('../img/Cover.png');
+  background-image: url("../img/Cover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,14 +104,14 @@ nav .profile-link a {
 }
 
 .home-main-text {
-  font-family: 'Roboto mono', monospace;
+  font-family: "Roboto mono", monospace;
   font-size: 50px;
   font-weight: 700;
   letter-spacing: 10px;
   color: white;
   text-align: center;
   margin: 0;
-  padding: 5rem 0; 
+  padding: 5rem 0;
 }
 
 .home-main-button {
@@ -159,7 +150,7 @@ nav .profile-link a {
   grid-column: 2;
 }
 
-.blogs-news-info-container h2 { 
+.blogs-news-info-container h2 {
   font-size: 45px;
 }
 
@@ -172,7 +163,7 @@ nav .profile-link a {
 }
 
 .blogs-posts-container h3 {
-  border-bottom: 1px solid #cdd2da;  
+  border-bottom: 1px solid #cdd2da;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -250,7 +241,8 @@ footer p {
   padding-bottom: 5px;
 }
 
-.contact-main-container .contact-left, .contact-right {
+.contact-main-container .contact-left,
+.contact-right {
   text-align: initial;
 }
 
@@ -294,21 +286,21 @@ footer p {
 
 @media (max-width: 900px) {
   .blogs-main-new {
-      grid-template-columns: 1fr;
-      grid-template-rows: 3fr
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
   }
 
   .blogs-news-img-container {
-      grid-row: 2;
+    grid-row: 2;
   }
 
   .blogs-news-info-container {
-      grid-column: 1;
-      grid-row: 3;
+    grid-column: 1;
+    grid-row: 3;
   }
 
   .blogs-posts-container .post-container {
-      max-width: 45%;
+    max-width: 45%;
   }
 
   .projects-main-container {
@@ -318,7 +310,7 @@ footer p {
   }
 
   .profile-main-container .profile-container {
-      display: block;
+    display: block;
   }
 
   .home-main-text {
@@ -346,7 +338,8 @@ footer p {
     margin: 0;
   }
 
-  .contact-main-container .contact-left, .contact-right {
+  .contact-main-container .contact-left,
+  .contact-right {
     margin-top: 0;
   }
 
@@ -387,7 +380,6 @@ footer p {
 }
 
 @media (max-width: 600px) {
-
   nav {
     display: flex;
     flex-direction: column;
@@ -408,7 +400,7 @@ footer p {
   }
 
   .blogs-posts-container .post-container {
-      max-width: 95%;
+    max-width: 95%;
   }
 
   .projects-main-container {
@@ -437,15 +429,12 @@ footer p {
 }
 
 @media (min-width: 426px) and (max-width: 568px) {
-
   .home-main-text {
     font-size: 30px;
   }
-
 }
 
 @media (max-width: 425px) {
-
   .home-main-text {
     font-size: 26px;
     letter-spacing: 4px;
@@ -478,7 +467,8 @@ footer p {
     width: 65px;
   }
 
-  .contact-main-container .contact-left, .contact-right {
+  .contact-main-container .contact-left,
+  .contact-right {
     margin-top: 0;
   }
 
@@ -505,13 +495,12 @@ footer p {
 }
 
 @media (max-width: 320px) {
-
   .projects-main-container {
     grid-template-columns: 1fr;
   }
-  
+
   .profile-main-proyects {
-    padding: 0 15px 20px;;
+    padding: 0 15px 20px;
   }
 
   .project-container {
